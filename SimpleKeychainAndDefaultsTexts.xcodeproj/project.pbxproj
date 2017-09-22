@@ -12,6 +12,8 @@
 		DB6F4D881F750D0B00195BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F4D861F750D0B00195BA1 /* Main.storyboard */; };
 		DB6F4D8A1F750D0B00195BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F4D891F750D0B00195BA1 /* Assets.xcassets */; };
 		DB6F4D8D1F750D0B00195BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F4D8B1F750D0B00195BA1 /* LaunchScreen.storyboard */; };
+		DBF4B1FA1F751112006BE2DE /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF4B1F81F751112006BE2DE /* KeychainItemAccessibility.swift */; };
+		DBF4B1FB1F751112006BE2DE /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF4B1F91F751112006BE2DE /* KeychainWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DB6F4D891F750D0B00195BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6F4D8C1F750D0B00195BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6F4D8E1F750D0B00195BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF4B1F81F751112006BE2DE /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = lib/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		DBF4B1F91F751112006BE2DE /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = lib/KeychainWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		DB6F4D811F750D0B00195BA1 /* SimpleKeychainAndDefaultsTexts */ = {
 			isa = PBXGroup;
 			children = (
+				DBF4B1F71F7510FB006BE2DE /* lib */,
 				DB6F4D821F750D0B00195BA1 /* AppDelegate.swift */,
 				DB6F4D841F750D0B00195BA1 /* ViewController.swift */,
 				DB6F4D861F750D0B00195BA1 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				DB6F4D8E1F750D0B00195BA1 /* Info.plist */,
 			);
 			path = SimpleKeychainAndDefaultsTexts;
+			sourceTree = "<group>";
+		};
+		DBF4B1F71F7510FB006BE2DE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DBF4B1F81F751112006BE2DE /* KeychainItemAccessibility.swift */,
+				DBF4B1F91F751112006BE2DE /* KeychainWrapper.swift */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6F4D851F750D0B00195BA1 /* ViewController.swift in Sources */,
+				DBF4B1FB1F751112006BE2DE /* KeychainWrapper.swift in Sources */,
 				DB6F4D831F750D0B00195BA1 /* AppDelegate.swift in Sources */,
+				DBF4B1FA1F751112006BE2DE /* KeychainItemAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				DB6F4D931F750D0B00195BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
