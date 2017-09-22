@@ -18,10 +18,16 @@ class ViewController: UIViewController {
         
         let retrieved = KeychainWrapper.standard.string(forKey: key)
         logText("Retrieve successful? \(retrieved)")
+        let retrievedFromDefaults = UserDefaults.standard.string(forKey: key)
+        logText("UserDefaults Retrieve successful? \(retrievedFromDefaults)")
+        
         
         
         let saveSuccessful: Bool = KeychainWrapper.standard.set("What is the point of all of this?", forKey: key)
         logText("Save successful? \(saveSuccessful)")
+        UserDefaults.standard.setValue("User Defaults stuff", forKey: key)
+        logText("Save to default successful, probably")
+        
         
         
         
